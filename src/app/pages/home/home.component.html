@@ -1,0 +1,13 @@
+<h2>Cartelera</h2>
+
+<div *ngIf="movies.length>0" class="row">
+    <div class="col">
+        <app-slideshow [movies]="moviesSlideShow"></app-slideshow>
+    </div>
+</div>
+
+
+<div class="row mt-5" *ngIf="movies.length>0">
+    <h1>Populares</h1>
+    <app-peliculas-poster-grid [movies]="movies"></app-peliculas-poster-grid>
+</div>
